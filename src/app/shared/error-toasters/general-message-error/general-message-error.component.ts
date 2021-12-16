@@ -9,6 +9,6 @@ export class GeneralMessageErrorComponent {
   constructor(
     public snackBarRef: MatSnackBarRef<GeneralMessageErrorComponent>,
     @Inject(MAT_SNACK_BAR_DATA) public data: any) {
-      setTimeout(() => this.snackBarRef.dismiss(), 5000)
+      setTimeout(() => this.snackBarRef.dismiss(), 5000);
     }
 }
