@@ -8,5 +8,7 @@ import { MAT_SNACK_BAR_DATA, MatSnackBarRef } from '@angular/material';
 export class GeneralMessageErrorComponent {
   constructor(
     public snackBarRef: MatSnackBarRef<GeneralMessageErrorComponent>,
-    @Inject(MAT_SNACK_BAR_DATA) public data: any) {}
+    @Inject(MAT_SNACK_BAR_DATA) public data: any) {
+      setTimeout(() => this.snackBarRef.dismiss(), 5000)
+    }
 }
